@@ -1,0 +1,22 @@
+{
+  "name": "whiteboardapp",
+  "version": "1.0.0",
+  "description": "Group final project for CSI 418Y. (Software Engineering) Created by Connor Walsh, Andrew Weith, and Alec Comley (Group subject to change)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/connorwalsh21/WhiteboardApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/connorwalsh21/WhiteboardApp/issues"
+  },
+  "homepage": "https://github.com/connorwalsh21/WhiteboardApp#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
