@@ -1,3 +1,5 @@
+Whiteboard App by Connor Walsh, Andrew Weith, Alec Comley, and Alex Kim.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

@@ -12,7 +12,9 @@ import { flexbox } from '@material-ui/system';
 import HighlightedButton from './components/HighlightedButton';
 import VerticalTabs from "./components/TabPanel";
 import SideDrawer from "./components/SideDrawer";
-import ContentWindow from "./components/ContentWindow";
+import ContentWindow from "./containers/ContentWindow";
+import LoginWindow from "./containers/LoginWindow";
+import Routes from "./Routes";
 
 function App() {
     const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
@@ -43,7 +45,9 @@ function App() {
                             </SideDrawer>
                         </Grid>
                         <Grid container xs={11}>
-                            <ContentWindow />
+                            {/*<ContentWindow />*/}
+                            <Routes />
+                            {/*<LoginWindow />*/}
                         </Grid>
                     </Grid>
                 </div>

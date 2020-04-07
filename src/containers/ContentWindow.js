@@ -54,10 +54,10 @@ const useStyles = makeStyles(theme => ({
                 color: Grey[100],
             },
             '&:hover fieldset': {
-                borderColor: Teal[700],
+                borderColor: Teal[300],
             },
             '&.Mui-focused fieldset': {
-                borderColor: Teal[300],
+                borderColor: Teal[700],
             },
         },
     },

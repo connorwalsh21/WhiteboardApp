@@ -24,7 +24,7 @@ import VerticalTabs from "./TabPanel";
 import ToggleButtonGroup from '@material-ui/lab/ToggleButtonGroup';
 import Home from './HomeButton';
 import Grid from '@material-ui/core/Grid';
-import ContentWindow from "./ContentWindow";
+import ContentWindow from "../containers/ContentWindow";
 
 const drawerWidth = 240;
 
