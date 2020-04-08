@@ -22,15 +22,19 @@ const useStyles = makeStyles(theme => ({
         alignItems: 'center',
         justifyContent: 'center',
         padding: theme.spacing(5),
-        paddingTop: '10%',
+        height: '100vh',
+        minWidth: '100vw',
+        maxWidth: '100vw',
+        //paddingTop: '10%',
         '& > *': {
             //margin: theme.spacing(1),
-            width: '90%',
-            maxWidth: '90%',
-            height: theme.spacing(90),
+            width: '65vw',
+            maxWidth: '65vw',
+            minWidth: '65vw',
+            height: theme.spacing(100),
         },
     },
-    chatArea: {
+    loginArea: {
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
@@ -69,26 +73,6 @@ const useStyles = makeStyles(theme => ({
             },
         },
     },
-    messageGrid: {
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        spacing: theme.spacing(5)
-    },
-    textLeft: {
-        justify: 'left',
-        paddingLeft: '5%',
-        //paddingRight: theme.spacing(20),
-        //marginRight: theme.spacing(20),
-        //padding: theme.spacing(10),
-    },
-    textRight: {
-        justify: 'right',
-        //paddingRight: theme.spacing(2),
-        paddingLeft: '95%',
-        //marginLeft: theme.spacing(20),
-        //padding: theme.spacing(10),
-    },
     formControl: {
         display: 'flex',
         flexDirection: 'column'
@@ -109,7 +93,7 @@ function LoginWindow(props) {
         event.preventDefault();
 
         try {
-            props.history.push("/message");
+            props.history.push("/home");
         } catch (e) {
             alert(e.message);
         }
@@ -121,7 +105,7 @@ function LoginWindow(props) {
 
     return (
         <Grid container xs={12} className={classes.root}>
-            <Paper elevation={4} className={classes.chatArea}>
+            <Paper elevation={4} className={classes.loginArea}>
                 <Grid container xs={11} className={classes.textGrid}>
                     <Typography variant='title' color='secondary'>
                         <Box fontSize={24} fontWeight='bold' letterSpacing={8}>WHITEBOARD</Box>

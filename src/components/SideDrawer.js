@@ -24,7 +24,7 @@ import VerticalTabs from "./TabPanel";
 import ToggleButtonGroup from '@material-ui/lab/ToggleButtonGroup';
 import Home from './HomeButton';
 import Grid from '@material-ui/core/Grid';
-import ContentWindow from "../containers/ContentWindow";
+import MessageWindow from "../containers/MessageWindow";
 
 const drawerWidth = 240;
 
@@ -200,9 +200,9 @@ export default function MiniDrawer() {
                 {/*<VerticalTabs>
 
                 </VerticalTabs>*/}
-                {/*<ContentWindow>
+                {/*<MessageWindow>
                     Hello
-                </ContentWindow>*/}
+                </MessageWindow>*/}
             </main>
         </div>
     );

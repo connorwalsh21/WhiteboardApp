@@ -6,14 +6,6 @@ import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import teal from '@material-ui/core/colors/teal';
 import grey from '@material-ui/core/colors/grey';
-import Box from '@material-ui/core/Box';
-import Grid from '@material-ui/core/Grid';
-import { flexbox } from '@material-ui/system';
-import HighlightedButton from './components/HighlightedButton';
-import VerticalTabs from "./components/TabPanel";
-import SideDrawer from "./components/SideDrawer";
-import ContentWindow from "./containers/ContentWindow";
-import LoginWindow from "./containers/LoginWindow";
 import Routes from "./Routes";
 
 function App() {
@@ -36,21 +28,7 @@ function App() {
         <ThemeProvider theme={theme}>
             <CssBaseline />
             <div>
-                {/*<NavBar />*/}
-                <div>
-                    <Grid container xs={12}>
-                        <Grid container xs={1}    >
-                            <SideDrawer>
-
-                            </SideDrawer>
-                        </Grid>
-                        <Grid container xs={11}>
-                            {/*<ContentWindow />*/}
-                            <Routes />
-                            {/*<LoginWindow />*/}
-                        </Grid>
-                    </Grid>
-                </div>
+                <Routes />
             </div>
         </ThemeProvider>
     )

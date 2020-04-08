@@ -15,12 +15,15 @@ const useStyles = makeStyles(theme => ({
         alignItems: 'center',
         justifyContent: 'center',
         padding: theme.spacing(5),
-        paddingTop: '10%',
+        //paddingTop: '10%',
+        height: '100vh',
+        maxHeight: '100vh',
+        width: '100vw',
         '& > *': {
             //margin: theme.spacing(1),
             width: '90%',
             maxWidth: '90%',
-            height: theme.spacing(90),
+            //height: theme.spacing(100),
         },
     },
     chatArea: {
@@ -29,6 +32,7 @@ const useStyles = makeStyles(theme => ({
         alignItems: 'center',
         justifyContent: 'center',
         color: Grey[300],
+        padding: theme.spacing(5),
     },
     textGrid: {
         display: 'flex',
@@ -83,7 +87,7 @@ const useStyles = makeStyles(theme => ({
     }
 }));
 
-function ContentWindow() {
+function MessageWindow() {
     const classes = useStyles();
 
     return (
@@ -105,4 +109,4 @@ function ContentWindow() {
     )
 }
 
-export default ContentWindow;
+export default MessageWindow;
